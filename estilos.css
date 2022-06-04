@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 65%, 62%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-mobile.svg);
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Violet);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    
+
+.main-container{
+    margin: 0 auto;
+}
+.huddle{
+    margin: 20px 50px;
+    background-image: url(images/logo.svg);
+    background-size: cover;
+    height: 30px;
+    width: 150px;
+    background-repeat: no-repeat;
+}
+.imagen{
+    
+    border-radius: 10px;
+    margin-top: 20px;
+    background: url(images/illustration-mockups.svg);
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+    margin: 40px auto;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 20px 40px;
+    line-height: 45px;
+}
+p{
+    color: white;
+    text-align: center;
+    margin: 20px 90px;
+    font-size: 16px;
+    line-height: 25px;
+}
+button{
+    display: block;
+    width: 260px;
+    height: 47px;
+    margin: 0 auto;
+    border-radius: 40px;
+    border: none;
+    color: var(--Violet);
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 15px var(--Violet),
+    1px 1px 10px -2px black;
+}
+button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+    cursor: pointer;
+}
+.social-media-container{
+    width: 140px;
+    
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    padding: 8px;
+    margin: 0 5px;
+    border-radius: 50%;
+    fill: white;
+    width: 45px;
+    height: 45px;
+    border: 1.5px solid white;
+}
+.icon:hover{
+    fill: var(--Soft-Magenta);
+    border: 2px solid var(--Soft-Magenta);
+}
+
+footer {
+    color: var(--Soft-Magenta);
+    font-size: 4px;
+    text-align: center;
+}
+footer p{
+    font-size: 14px;
+}
+
+
+
+
+@media (min-width:700px){
+    .main-container{
+        display: flex;
+    }
+    .left{
+        width: 50%;
+        height: 100%;
+    }
+
+    .left .huddle{
+        width: 200px;
+        height: 50px;
+        margin: 60px 70px 0px;
+    }
+    .left .imagen{
+    height: 300px;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 120px;
+    margin-left: 40px;
+    
+    
+    }
+    .right{
+        margin-left: 60px;
+        width: 50%;
+        height: 100%;
+    }
+    .right h1{
+        margin: 180px 80px 20px 40px;
+        text-align: left;
+        font-size: 19px;
+        
+    }
+    .right p{
+        text-align: left;
+        margin-right: 60px;
+        margin-left: 40px;
+        padding-right: 10px;
+        line-height: 27px;
+        
+        
+    }
+    .right button{
+        margin: 30px 90px;
+        width: 180px;
+        height: 45px;
+    }
+    .right .social-media-container{
+        margin-top: 250px;
+        padding-top: 10px;
+        margin-left: 40px;
+    }
+    .attribution{
+        display: inline;
+    }
+}
+
+@media (min-width:1440px){
+    .main-container{
+        display: flex;
+    }
+    .left{
+        width: 50%;
+        height: 100%;
+    }
+
+    .left .huddle{
+        width: 200px;
+        height: 50px;
+        margin: 40px 120px;
+    }
+    .left .imagen{
+    height: 600px;
+    width:800px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    margin-left: 120px;
+    
+    
+    }
+    .right{
+        margin-left: 100px;
+        width: 50%;
+        height: 100%;
+    }
+    .right h1{
+        margin: 250px 200px 30px 130px;
+        text-align: left;
+        padding-right: 120px;
+        font-size: 30px;
+        
+    }
+    .right p{
+        text-align: left;
+        margin-right: 250px;
+        padding-right: 20px;
+        margin-left: 130px;
+        line-height: 27px;
+        
+    }
+    .right button{
+        margin: 30px 10px 10px 120px;
+        width: 180px;
+        height: 45px;
+    }
+    .right .social-media-container{
+        margin-top: 320px;
+        padding-top: 10px;
+        margin-left: 630px;
+    }
+    .attribution{
+        display: inline;
+    }
+}
+
+
+
+
+
+
+
